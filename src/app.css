@@ -1,0 +1,20 @@
+.app-container {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, auto);
+}
+
+@media only screen and (max-width: 767.98px) {
+  .app-container {
+    grid-row-gap: 20px;
+  }
+}
+@media only screen and (min-width: 767.99px) and (max-width: 1199.98px) {
+  .app-container {
+    grid-row-gap: 30px;
+  }
+}
+@media only screen and (min-width: 1199.99px) {
+  .app-container {
+    grid-row-gap: 30px;
+  }
+}

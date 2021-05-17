@@ -1,0 +1,32 @@
+.inner-features-container {
+  grid-column: 2/3;
+  /* height: 50px; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.feature {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature i {
+  font-size: 1rem;
+  color: #666;
+}
+
+.feature p {
+  letter-spacing: 0.5px;
+  color: #666;
+  line-height: 1.1;
+  font-weight: 500;
+  text-align: left;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-column-gap: 10px;
+}

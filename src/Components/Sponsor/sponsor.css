@@ -1,0 +1,33 @@
+.sponsor-container {
+  display: grid;
+  transition: all 0.5s;
+}
+@media only screen and (max-width: 767.98px) {
+  .sponsor-container {
+    grid-template-columns: 12px 2fr 12px;
+  }
+}
+@media only screen and (min-width: 767.99px) and (max-width: 1199.98px) {
+  .sponsor-container {
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+}
+@media only screen and (min-width: 1199.99px) {
+  .sponsor-container {
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+}
+.inner-sponsor-container {
+  grid-column: 2/3;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  padding: 15px 0 15px;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+}
+
+.sponsor-image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

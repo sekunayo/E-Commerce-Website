@@ -1,0 +1,117 @@
+.footer-bottom {
+  display: grid;
+  background-color: #000;
+  color: #fff;
+  border: 0px;
+  padding: 20px 0;
+}
+@media only screen and (max-width: 767.98px) {
+  .footer-bottom {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (min-width: 767.99px) and (max-width: 1199.98px) {
+  .footer-bottom {
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+}
+@media only screen and (min-width: 1199.99px) {
+  .footer-bottom {
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+}
+.inner-footer-bottom {
+  display: grid;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .inner-footer-bottom {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 15px;
+  }
+}
+@media only screen and (min-width: 767.99px) and (max-width: 1199.98px) {
+  .inner-footer-bottom {
+    grid-template-columns: 1fr 1fr;
+    grid-column: 2/3;
+  }
+}
+@media only screen and (min-width: 1199.99px) {
+  .inner-footer-bottom {
+    grid-template-columns: 1fr 1fr;
+    grid-column: 2/3;
+  }
+}
+.inner-footer-bottom p {
+  color: #666;
+  display: flex;
+}
+@media only screen and (max-width: 767.98px) {
+  .inner-footer-bottom p {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 767.99px) and (max-width: 1199.98px) {
+  .inner-footer-bottom p {
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1199.99px) {
+  .inner-footer-bottom p {
+    align-items: center;
+  }
+}
+.footer-bottom-logo {
+  color: #aaa;
+}
+
+.footer-payment-container {
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (max-width: 767.98px) {
+  .footer-payment-container {
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 767.99px) and (max-width: 1199.98px) {
+  .footer-payment-container {
+    gap: 10px;
+    justify-content: flex-end;
+  }
+}
+@media only screen and (min-width: 1199.99px) {
+  .footer-payment-container {
+    gap: 10px;
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .footer-payment-box {
+    width: 30px;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 767.99px) and (max-width: 1199.98px) {
+  .footer-payment-box {
+    width: auto;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 1199.99px) {
+  .footer-payment-box {
+    width: auto;
+    height: auto;
+  }
+}
+
+.footer-payment-box img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}

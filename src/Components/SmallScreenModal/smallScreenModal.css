@@ -1,0 +1,93 @@
+.small-screen-modal {
+  background: none repeat scroll 0 0 #fea712;
+  border-right: 1px solid #ee9c10;
+  box-shadow: 0 1px 8px #eb990e;
+  box-sizing: content-box;
+  line-height: 1.42857;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+}
+.modal-search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+.modal-search-container form input {
+  height: 36px;
+  margin: 0;
+  padding: 6px 0 6px 10px;
+  border: none;
+  background-color: #fff;
+  font-size: 0.9375rem;
+  color: #777;
+}
+.modal-search-container form input::placeholder {
+  color: #777;
+  font-family: "Poppins", sans-serif;
+}
+.modal-search-container form input:focus {
+  outline: 0;
+}
+.modal-nav-link {
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  /* padding: 10px 10px 15px 15px; */
+  border-top: 1px solid #ee9c10;
+}
+.modal-nav-link p {
+  color: #fff;
+  text-decoration: none;
+  white-space: normal;
+  letter-spacing: 1px;
+  padding: 10px 10px 15px 15px;
+}
+.modal-plus-icon {
+  border-left: 1px solid #ee9c10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-plus-icon i {
+  color: #fff;
+}
+.lowercase {
+  text-transform: capitalize;
+}
+.uppercase {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.special-modal-nav-link {
+  border-bottom: 1px solid #ee9c10;
+}
+.modal-search-icon {
+  background-color: #44a23d;
+  color: #fff;
+  line-height: 24px;
+  padding: 4px 10px 10px;
+  border: none;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-search-icon i {
+  font-size: 1rem;
+}
+.topmost-nav {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 20px;
+}
+.close-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.close-modal i {
+  font-size: 1.5rem;
+  color: #fff;
+}

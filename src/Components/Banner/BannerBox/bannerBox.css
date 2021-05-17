@@ -1,0 +1,53 @@
+.banner-box {
+  background: #bbd615;
+  color: #fff;
+  padding: 44px 40px 46px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green-banner {
+  background-color: #bbd615;
+}
+
+.yellow-banner {
+  background-color: #ffc229;
+}
+
+.blue-banner {
+  background-color: #66ccff;
+}
+
+.banner-box h3 {
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 29px;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.banner-box .underline {
+  width: 100px;
+  height: 1px;
+  background-color: #eee;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+.banner-box p {
+  color: #f8f8f8;
+  line-height: 25px;
+  text-align: center;
+}
+
+.banner-content-box {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-row-gap: 15px;
+  justify-self: center;
+  align-self: center;
+}

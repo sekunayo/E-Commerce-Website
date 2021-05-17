@@ -1,0 +1,104 @@
+.featured-product-container {
+  display: grid;
+}
+@media only screen and (max-width: 767.98px) {
+  .featured-product-container {
+    grid-template-columns: 12px 2fr 12px;
+  }
+}
+@media only screen and (min-width: 767.99px) and (max-width: 1199.98px) {
+  .featured-product-container {
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+}
+@media only screen and (min-width: 1199.99px) {
+  .featured-product-container {
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+}
+
+.inner-featured-product-container {
+  grid-column: 2/3;
+  /* margin-top: 30px; */
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-row-gap: 10px;
+}
+
+.featured-box-container {
+  display: grid;
+}
+@media only screen and (max-width: 767.98px) {
+  .featured-box-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-row-gap: 20px;
+  }
+}
+@media only screen and (min-width: 767.99px) and (max-width: 1199.98px) {
+  .featured-box-container {
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 20px;
+  }
+}
+@media only screen and (min-width: 1199.99px) {
+  .featured-box-container {
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 20px;
+  }
+}
+
+.featured-box {
+  border: 1px #e5e5e5 solid;
+}
+.featured-product-container h3 {
+  color: #333;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.featured-product-links {
+  display: grid;
+}
+@media only screen and (max-width: 767.98px) {
+  .featured-product-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+  }
+}
+@media only screen and (min-width: 767.99px) and (max-width: 1199.98px) {
+  .featured-product-links {
+    grid-template-columns: repeat(5, auto);
+    grid-column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1199.99px) {
+  .featured-product-links {
+    grid-template-columns: repeat(5, auto);
+    grid-column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.featured-product-links li a {
+  color: #666;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  line-height: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.featured-product-links li a:active {
+  color: #8ac42f;
+}
