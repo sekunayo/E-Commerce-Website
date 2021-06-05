@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../Product/product.css";
 import ProductOverlay from "./ProductOverlay/ProductOverlay";
 
@@ -18,7 +19,7 @@ function Product(props) {
         onMouseLeave={mouseLeave}
       >
         <img src={props.image} alt="" srcset=""></img>
-        {overlay && <ProductOverlay />}
+        {overlay && <ProductOverlay id={props.id} />}
       </div>
       <div class="product-text-box">
         <p class="product-title">Product Title Here</p>
@@ -41,7 +42,9 @@ function Product(props) {
         </p>
         <p class="product-price">{props.price}</p>
         <div class="product-button-container">
-          <button class="product-button">Add to Cart</button>
+          <Link to="/cart">
+            <button class="product-button">Add to Cart</button>
+          </Link>
         </div>
       </div>
     </div>

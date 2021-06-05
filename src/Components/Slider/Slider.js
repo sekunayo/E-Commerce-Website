@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../Slider/slider.css";
 import "../Slider/SliderArrows/SliderArrows.js";
 import SliderArrows from "../Slider/SliderArrows/SliderArrows.js";
-import SliderText from "./SliderText/SliderText.js";
 function Slider(props) {
   const [arrow, setArrow] = useState(false);
+
   const onMouseMove = () => {
     setArrow(!arrow);
   };
@@ -12,25 +13,32 @@ function Slider(props) {
     setArrow(false);
   };
   return (
-    <div className="slider-container">
-      <div className="inner-slider-container">
-        <div
-          className="image-container"
-          onMouseEnter={onMouseMove}
-          onClick={onMouseMove}
-          onMouseLeave={onMouseLeave}
-        >
-          <img src={props.image} alt="" srcSet=""></img>
-          {arrow && <SliderArrows next={props.next} prev={props.prev} />}
-          <SliderText
-            title={props.title}
-            info={props.info}
-            semiInfo={props.semiInfo}
-            buttonText={props.buttonText}
-          />
+    <article
+      className={props.imageContainerClass}
+      onMouseEnter={onMouseMove}
+      onClick={onMouseMove}
+      onMouseLeave={onMouseLeave}
+    >
+      <img src={props.image} alt="" srcSet=""></img>
+      {arrow && <SliderArrows next={props.next} prev={props.prev} />}
+      <div className="slider-info-container">
+        <p className="slider-title">{props.title}</p>
+        <p className="slider-info">{props.info}</p>
+        <p className="slider-semi-info">{props.semiInfo}</p>
+        <div className="slider-button-container">
+          {props.display && (
+            <Link to="/shop" className="nav__link">
+              <button className="slider-button">
+                {props.buttonText}{" "}
+                <span>
+                  <i class="fas fa-caret-right"></i>
+                </span>
+              </button>
+            </Link>
+          )}
         </div>
       </div>
-    </div>
+    </article>
   );
 }
 

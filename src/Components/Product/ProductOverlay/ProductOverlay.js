@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function ProductOverlay() {
+function ProductOverlay(props) {
   return (
     <div class="product-overlay-container">
       <div class="product-overlay-buttons">
@@ -10,9 +11,11 @@ function ProductOverlay() {
           </p>
         </div>
         <div class="overlay-button">
-          <p>
-            <i class="far fa-heart"></i>
-          </p>
+          <Link to="/wishlist" className="overlay__links">
+            <p>
+              <i class="far fa-heart"></i>
+            </p>
+          </Link>
         </div>
         <div class="overlay-button">
           <p>

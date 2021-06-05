@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../LargeScreenHeader/header.css";
 import CountryDropDown from "./CountryDropDown/CountryDropDown.js";
 import CurrencyDropDown from "./CurrencyDropDown/CurrencyDropDown.js";
@@ -25,7 +26,8 @@ function Header(props) {
     setService(!service);
     setCountry(false);
     setCurrency(false);
-  };
+  }
+  
 
   return (
     <header className="header">
@@ -33,14 +35,14 @@ function Header(props) {
         <nav>
           <div className="left-nav">
             <div className="left-inner-nav">
-              <p>Welcome to Organic!</p>
+              <p className="left__inner__nav__text">Welcome to Organic!</p>
               <ul
                 className="drop-down-country relative"
                 onClick={countryHandler}
               >
                 <li className="special-list-item">
                   <a href="">
-                    <span>
+                    <span className="header__country__image">
                       <img src={english} alt="" srcSet=""></img>
                     </span>
                     <span>English</span>
@@ -66,9 +68,21 @@ function Header(props) {
           </div>
           <div className="right-nav">
             <div className="right-inner-nav">
-              <p>My Account</p>
-              <p>Wishlist</p>
-              <p>Checkout</p>
+              <p>
+                <Link to="/account" className="nav__link">
+                  My Account
+                </Link>
+              </p>
+              <p>
+                <Link to="/wishlist" className="nav__link">
+                  Wishlist
+                </Link>
+              </p>
+              <p>
+                <Link to="/checkout" className="nav__link">
+                  Checkout
+                </Link>
+              </p>
               <ul className="relative" onClick={serviceHandler}>
                 <li className="special-list-item">
                   <a href="">
@@ -80,7 +94,11 @@ function Header(props) {
                 </li>
                 {service && <ServicesDropDown />}
               </ul>
-              <p>Login</p>
+              <p>
+                <Link to="/account" className="nav__link">
+                  Login
+                </Link>
+              </p>
             </div>
           </div>
         </nav>

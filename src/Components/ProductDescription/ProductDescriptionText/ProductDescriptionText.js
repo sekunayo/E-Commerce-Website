@@ -1,6 +1,6 @@
 import React from "react";
 
-function ProductDescriptionText() {
+function ProductDescriptionText(props) {
   return (
     <div class="productDescription__text__container">
       <h1 class="productDescription__text__container__title">
@@ -41,7 +41,7 @@ function ProductDescriptionText() {
       <div class="productDescription__text__container__price__box">
         <p>
           <span class="productDescription__text__container__price__box__actual__price">
-            $599.99
+            {props.price}
           </span>
           <span class="productDescription__text__container__price__box__discounted__price">
             $499.99

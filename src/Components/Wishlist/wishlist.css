@@ -1,0 +1,233 @@
+.wishlist {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+}
+.wishlist__inner {
+  display: grid;
+  grid-template-columns: 2.8fr 1fr;
+  grid-column: 2/3;
+}
+.wishlist__inner__container__1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wishlist__inner__container__header {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.wishlist__button__box {
+  margin-top: 15px;
+}
+.wishlist__button__box__button {
+  font-size: 0.625rem;
+  letter-spacing: 0.5px;
+  line-height: normal;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.875rem;
+  font-family: "Poppins", sans-serif;
+}
+.white__button {
+  background-color: #fff;
+  color: #666;
+  border: 1px solid #d1d1d1;
+}
+.white__button:hover {
+  background: #fdae03;
+  border: 1px solid #fdae03;
+  color: #fff;
+}
+.green__button {
+  background-color: #8ac42f;
+  color: #fff;
+  border: 1px #8ac42f solid;
+}
+.green__button:hover {
+  background: #fdae03;
+  border: 1px solid #fdae03;
+  color: #fff;
+}
+.wishlist__form__container {
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  background-color: #fff;
+}
+.wishlist__form__container__form__box {
+  display: grid;
+  grid-template-columns: 2fr 4fr 1.2fr 1.2fr 1fr 1fr;
+}
+.wishlist__column {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, auto);
+}
+.wishlist__column__content__image {
+  height: 125px;
+  width: 131px;
+}
+.wishlist__column__content__image img {
+  max-width: 100%;
+  height: 125px;
+}
+.wishlist__column__heading {
+  border: 1px solid #e5e5e5;
+  padding: 8px;
+  height: 40px;
+}
+.wishlist__column__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 191px;
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+}
+.wishlist__product__name {
+  text-transform: capitalize;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+.wishlist--small {
+  color: #999;
+  font-size: 0.7438rem;
+}
+.wishlist__column__product__box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.wishlist__additional__info {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-row-gap: 5px;
+}
+.wishlist__price {
+  font-weight: bolder;
+}
+.wishlist__quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wishlist__quantity input {
+  background-color: #ffffff;
+  padding: 5px;
+  text-align: center;
+  border: 2px #efefef solid;
+  width: 50px;
+  margin: 0;
+  outline: none;
+  color: #aaa;
+}
+.wishlist__compare__icon {
+  color: #222;
+  font-size: 13px;
+}
+.wishlist--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wishlist__footer__button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.wishlist__footer__inner__button {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.wishlist__textbox {
+  width: 100%;
+  background-color: #f0f0f0;
+  border: 1px #f1f1f1 solid;
+  padding: 8px 10px;
+  outline: none;
+  color: #aaa;
+  overflow: auto;
+  height: 60px;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.wishlist__link {
+  color: #8ac42f;
+}
+.wishlist__inner__container__2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+}
+.wishlist__account__section,
+.wishlist__compare__section {
+  background-color: #fff;
+  width: 260px;
+}
+.wishlist__account__section__header,
+.wishlist__compare__section__header {
+  border-bottom: 1px solid #e5e5e5;
+  color: #000;
+  letter-spacing: 1px;
+  line-height: normal;
+  padding: 15px 15px 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.orange__button {
+  background: #fdae03;
+  border: 1px solid #fdae03;
+  color: #fff;
+}
+
+.wishlist__account__list,
+.wishlist__compare__list {
+  padding: 0px 15px 15px 15px;
+  font-size: 0.8125rem;
+}
+.wishlist__compare__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.wishlist__account__list li:before {
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-size: 0.625rem;
+  font-weight: 900;
+  cursor: pointer;
+  line-height: 16px;
+  color: #333;
+}
+.wishlist__account__list li {
+  padding: 10px 0px;
+  border-top: 1px #fff solid;
+  border-bottom: 1px #ddd solid;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.wishlist__compare__list li {
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wishlist__account__list li:first-child {
+  border-top: 0;
+}
+.wishlist__account__list li:last-child {
+  border-bottom: 0;
+}

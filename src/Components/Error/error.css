@@ -1,0 +1,49 @@
+.error {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  height: 460px;
+}
+.error__inner__container {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error__inner__container__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.error__inner__container__body h2 {
+  color: #da2c2a;
+  font-size: 10rem;
+  line-height: 1;
+  font-weight: 500;
+}
+.error__inner__container__body__error__text {
+  color: #333;
+  font-size: 1.25rem;
+  font-weight: normal;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.error__inner__container__body button {
+  background-color: #8ac42f;
+  border: medium none;
+  border-radius: 2px 2px 2px 2px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9375rem;
+  padding: 14px 35px;
+  text-decoration: none;
+  height: auto;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}

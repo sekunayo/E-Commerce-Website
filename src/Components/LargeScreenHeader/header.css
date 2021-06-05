@@ -92,6 +92,10 @@ nav {
   }
 }
 
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+}
 .left-inner-nav {
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -108,9 +112,10 @@ nav {
   text-align: center;
   color: #fff;
   font-weight: normal;
+  font-size: 0.75rem;
 }
 
-.left-inner-nav > p {
+.left__inner__nav__text {
   font-size: 0.8125rem;
   color: #fff;
 }
@@ -280,6 +285,10 @@ ul li {
   grid-template-columns: auto auto;
   grid-column-gap: 5px;
 }
+.header__country__image {
+  display: flex;
+  align-items: center;
+}
 
 .drop-down-country .special-list-item a {
   display: grid;
@@ -295,11 +304,15 @@ ul li {
   padding: 5px 15px;
   color: #333;
   line-height: 1.42857143;
+  font-size: 0.75rem;
 }
 
 .special-list-item a {
   color: #fff;
   text-decoration: none;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
 }
 
 .caret {
@@ -360,4 +373,10 @@ ul li {
 .modal-open-icon i {
   font-size: 1.5rem;
   color: #fea712;
+}
+.cart-content {
+  color: #333;
+  text-transform: uppercase;
+  padding-left: 0px;
+  font-size: 0.75rem;
 }

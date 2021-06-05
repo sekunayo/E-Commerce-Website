@@ -1,0 +1,112 @@
+.account {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+}
+
+.account__inner__container {
+  grid-column: 2/3;
+  border: 1px solid #e5e5e5;
+}
+
+.account__inner__container__title {
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+
+.account__inner__container__title h1 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 25px;
+  text-transform: uppercase;
+}
+
+.account__inner__container__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 25px;
+  min-height: 362px;
+  background-color: #fff;
+}
+
+.account__inner__container__body__first__container {
+  text-align: left;
+  background: #fff;
+  border-right: 1px solid #eaeaea;
+  padding: 25px 25px 0 0;
+}
+.account__inner__container__body__first__container__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.account__inner__container__body--strong--text {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.account--small--font--size {
+  font-size: 0.8125rem;
+  text-align: justify;
+}
+.account__inner__container__body__second__container__text__button {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.account--button--style {
+  color: #666;
+  font-size: 0.625rem;
+  letter-spacing: 0.5px;
+  line-height: normal;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  border: 1px #d1d1d1 solid;
+  font-weight: 600;
+  background-color: #8ac42f;
+  color: #fff;
+  border: 1px #8ac42f solid;
+}
+.account--button--style:hover {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+}
+.account__inner__container__body__second__container {
+  padding: 25px 0 0 25px;
+}
+.account__inner__container__body__second__container__form {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-row-gap: 10px;
+}
+.account__inner__container__body__second__container__text {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, auto);
+  grid-row-gap: 10px;
+}
+.account__inner__container__body__second__container__form__email,
+.account__inner__container__body__second__container__form__password {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.account__inner__container__body__second__container__form__email input,
+.account__inner__container__body__second__container__form__password input {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  padding: 10px;
+  width: 80%;
+  outline: none;
+  color: #aaa;
+}
+.account--required--field {
+  font-size: 0.75rem;
+  color: #ff0000;
+}
+.account--forgot--password {
+  color: #8ac42f;
+}

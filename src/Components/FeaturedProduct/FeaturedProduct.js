@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from "react";
 import Product from "../Product/Product.js";
-import { featuredProducts, list } from "../../data.js";
+import { products, list } from "../../data.js";
 import "../FeaturedProduct/featuredProduct.css";
-const newList = [...new Set(featuredProducts.map((element) => element.type))];
+import { Link } from "react-router-dom";
+const featuredProduct = products.filter(
+  (element) => element.category === "featuredProduct"
+);
+const newList = [...new Set(featuredProduct.map((element) => element.type))];
 function FeaturedProduct() {
   const [defaultCategory, setDefaultCategory] = useState(
-    featuredProducts.filter((element) => element.type === "Vegetables")
+    featuredProduct.filter((element) => element.type === "Vegetables")
   );
-  const [allCategory, setAllCategory] = useState(featuredProducts);
+  const [allCategory, setAllCategory] = useState(featuredProduct);
   const [vegetable, setVegetable] = useState(null);
   const [fruit, setFruit] = useState(null);
   const [apple, setApple] = useState(null);
@@ -67,12 +71,18 @@ function FeaturedProduct() {
         </ul>
         <div className="featured-box-container">
           {defaultCategory.map((element) => (
-            <Product
-              key={element.id}
-              image={element.image}
-              price={element.price}
-              class={"featured-box"}
-            />
+            <Link
+              to={`/product/${element.type}/${element.id}`}
+              className="nav__link"
+            >
+              <Product
+                key={element.id}
+                image={element.image}
+                price={element.price}
+                class={"featured-box"}
+                id={element.id}
+              />
+            </Link>
           ))}
         </div>
       </div>

@@ -1,0 +1,126 @@
+.compare {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+}
+
+.compare__inner__container {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.compare__inner__container__header {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.compare__button__box__button {
+  font-size: 0.625rem;
+  letter-spacing: 0.5px;
+  line-height: normal;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.white__button {
+  background-color: #fff;
+  color: #666;
+  border: 1px solid #d1d1d1;
+}
+.white__button:hover {
+  background: #fdae03;
+  border: 1px solid #fdae03;
+  color: #fff;
+}
+
+.compare__form__container {
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  background-color: #fff;
+}
+.compare__form__container__form__box {
+  display: flex;
+  flex-direction: column;
+}
+.compare__row {
+  display: grid;
+  grid-template-columns: 93px 1fr 1fr 1fr 1fr;
+}
+.compare__row__content__image {
+  height: 125px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.compare__row__content__image img {
+  max-width: 100%;
+  height: 125px;
+}
+.compare__row__heading {
+  border: 1px solid #e5e5e5;
+  padding: 8px;
+  vertical-align: top;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+.compare__row__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+}
+.compare__product__name {
+  text-transform: capitalize;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.compare--small {
+  font-size: 0.7438rem;
+}
+.compare__row__product__box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.new__price {
+  font-weight: bolder;
+}
+.old__price {
+  text-decoration: line-through;
+}
+.compare__image__delete {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.compare__image__delete i {
+  color: #ff0000;
+}
+.compare__footer__inner__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.compare__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+}
+.compare__link {
+  color: #8ac42f;
+}

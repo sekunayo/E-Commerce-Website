@@ -1,0 +1,35 @@
+.cart__button__box__button {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  line-height: normal;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: "Poppins", sans-serif;
+}
+.cart__button__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart__description__box {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #eaeaea;
+}
+.compare__sub__header {
+  font-weight: bold;
+  line-height: 1.1;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.875rem;
+  letter-spacing: 0.5px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.compare__sub__container {
+  display: flex;
+  flex-direction: column;
+}

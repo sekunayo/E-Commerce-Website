@@ -9,26 +9,26 @@ function Features() {
           <span>
             <i className="fas fa-plane"></i>
           </span>
-          <p>Free & Next Day Delivery</p>
+          <h6>Free & Next Day Delivery</h6>
         </div>
         <div className="feature feature-2">
           <span>
             <i className="fas fa-headphones-alt"></i>
           </span>
-          <p>Support 24/7 For Clients</p>
+          <h6>Support 24/7 For Clients</h6>
         </div>
         <div className="feature feature-3">
           <span>
             <i className="far fa-thumbs-up"></i>
           </span>
-          <p>100% Satisfaction Guarantee</p>
+          <h6>100% Satisfaction Guarantee</h6>
         </div>
         <div className="feature feature-4">
           <span>
             {" "}
             <i className="fas fa-tag"></i>
           </span>
-          <p>Great Daily Deals Discount</p>
+          <h6>Great Daily Deals Discount</h6>
         </div>
       </div>
     </div>

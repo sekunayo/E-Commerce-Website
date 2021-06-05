@@ -1,57 +1,47 @@
-import React from "react";
+import React, { useEffect, useState, useContext } from "react";
 import Product from "../Product/Product.js";
 import "../BestSelling/bestSelling.css";
-import { BestSellingProducts } from "../../data.js";
 import specialProduct from "../../images/special-product-bg.jpg";
-
-function BestSelling() {
+import { Link } from "react-router-dom";
+import { ProductContext } from "../../context/ProductContext.js";
+function BestSelling(props) {
+  const [bestProduct, setBestProduct] = useState([]);
+  const productValue = useContext(ProductContext);
+  const { a, b } = productValue;
+  console.log(a, b);
+  // useEffect(() => {
+  //   const bestSellingProduct = value1.filter(
+  //     (element) => element.category === "bestSelling"
+  //   );
+  //   setBestProduct(bestSellingProduct);
+  // }, [value1]);
   return (
-    <div className="best-selling-container">
-      <div className="inner-best-selling-container">
-        <div className="best-selling-image-container">
-          <img src={specialProduct} alt="" srcSet=""></img>
-          <div className="best-selling-text-container">
-            <h3>Best Selling</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam. Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum.
-            </p>
-            <div className="best-selling-button-container">
-              <button>More products</button>
-            </div>
-            <div className="time-container">
-              <p className="day">
-                a<br />
-                <span>Day</span>
-              </p>
-              <p className="month">
-                a<br />
-                <span>Month</span>
-              </p>
-              <p className="year">
-                a<br />
-                <span>Year</span>
-              </p>
-              <p className="time">
-                a<br />
-                <span>Time</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="best-selling-products-container">
-          {BestSellingProducts.map((element) => (
-            <Product
-              key={element.id}
-              image={element.image}
-              price={element.price}
-            />
-          ))}
-        </div>
-      </div>
-    </div>
+    <p></p>
+    // <div className="best-selling-container">
+    //   <div className="inner-best-selling-container">
+    //     <h3 className="best__selling__header">best selling products</h3>
+    //     <div className="best-selling-products-container">
+    //       <div className="best__selling__left__arrow best__selling__arrow">
+    //         <i class="fas fa-chevron-left"></i>
+    //       </div>
+    //       <div className="best__selling__right__arrow best__selling__arrow">
+    //         <i class="fas fa-chevron-right"></i>
+    //       </div>
+    //       {bestProduct.map((element) => (
+    //         <Link
+    //           to={`/product/${element.type}/${element.id}`}
+    //           className="nav__link"
+    //         >
+    //           <Product
+    //             key={element.id}
+    //             image={element.image}
+    //             price={element.price}
+    //           />
+    //         </Link>
+    //       ))}
+    //     </div>
+    //   </div>
+    // </div>
   );
 }
 

@@ -36,32 +36,255 @@ import testimonial4 from "../src/images/testimonials-img4.jpg";
 import testimonial5 from "../src/images/testimonials-img5.jpg";
 
 const brandContainer = [brand1, brand2, brand3, brand4, brand5, brand6];
-const BestSellingProducts = [
+const products = [
   {
     price: "155.00",
     image: bestSeller1,
     id: "1",
+    category: "bestSelling",
+    type: "Apples",
+    code: "#123456723",
+    availability: "In stock",
+    specialCategory: "new",
+    oldPrice: "125.00",
+    manufacturer: "Colorido",
+    reviews: "3",
+    name: "pear",
+    color: "pink",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
   },
   {
     price: "225.00",
     image: bestSeller2,
     id: "2",
+    category: "bestSelling",
+    type: "Vegetables",
+    code: "#123456722",
+    availability: "In stock",
+    specialCategory: "upsell",
+    oldPrice: "200.00",
+    manufacturer: "Addidas",
+    reviews: "1",
+    name: "apples",
+    color: "grey",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
   },
   {
     price: "99.00",
     image: bestSeller3,
     id: "3",
+    category: "bestSelling",
+    type: "Fruits",
+    code: "#123456721",
+    availability: "In stock",
+    oldPrice: "90.00",
+    manufacturer: "Barisa Epic",
+    reviews: "2",
+    name: "guava",
+    color: "orange",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
+  },
+  {
+    price: "155.00",
+    image: featureProduct1,
+    id: "4",
+    type: "Vegetables",
+    category: "featuredProduct",
+    code: "#123456720",
+    availability: "Out of stock",
+    oldPrice: "105.00",
+    manufacturer: "Esbeda",
+    reviews: "4",
+    name: "lime",
+    color: "white",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
+  },
+  {
+    price: "225.00",
+    image: featureProduct4,
+    id: "5",
+    type: "Vegetables",
+    category: "featuredProduct",
+    code: "#123456719",
+    availability: "Out of stock",
+    oldPrice: "215.00",
+    manufacturer: "Addidas",
+    reviews: "5",
+    name: "corn",
+    color: "grey",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
+  },
+  {
+    price: "99.00",
+    image: featureProduct2,
+    id: "6",
+    type: "Vegetables",
+    category: "featuredProduct",
+    code: "#123456718",
+    availability: "In stock",
+    oldPrice: "90.00",
+    manufacturer: "Barisa Epic",
+    reviews: "3",
+    name: "onions",
+    color: "pink",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
+  },
+  {
+    price: "156.00",
+    image: featureProduct3,
+    id: "7",
+    type: "Vegetables",
+    category: "featuredProduct",
+    code: "#123456717",
+    availability: "In stock",
+    oldPrice: "106.00",
+    manufacturer: "Colorido",
+    reviews: "2",
+    name: "orange",
+    color: "orange",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
+  },
+  {
+    price: "155.00",
+    image: bestSeller1,
+    id: "8",
+    type: "Apples",
+    category: "featuredProduct",
+    code: "#123456716",
+    availability: "Out of stock",
+    specialCategory: "new",
+    oldPrice: "150.00",
+    manufacturer: "Barisa Epic",
+    reviews: "4",
+    name: "garlic",
+    color: "white",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
+  },
+
+  {
+    price: "225.00",
+    image: featureProduct5,
+    id: "9",
+    type: "Apples",
+    category: "featuredProduct",
+  },
+  {
+    price: "99.00",
+    image: bestSeller3,
+    id: "10",
+    type: "Apples",
+    category: "featuredProduct",
+  },
+  {
+    price: "156.00",
+    image: featureProduct6,
+    id: "11",
+    type: "Apples",
+    category: "featuredProduct",
+  },
+  {
+    price: "155.00",
+    image: featureProduct6,
+    id: "12",
+    type: "Fruits",
+    category: "featuredProduct",
+  },
+  {
+    price: "225.00",
+    image: bestSeller1,
+    id: "13",
+    type: "Fruits",
+    category: "featuredProduct",
+  },
+  {
+    price: "99.00",
+    image: featureProduct7,
+    id: "14",
+    type: "Fruits",
+    category: "featuredProduct",
+  },
+  {
+    price: "156.00",
+    image: featureProduct8,
+    id: "15",
+    type: "Fruits",
+    category: "featuredProduct",
+  },
+  {
+    price: "155.00",
+    image: featureProduct1,
+    id: "16",
+    type: "Hot Drinks",
+    category: "featuredProduct",
+  },
+  {
+    price: "225.00",
+    image: featureProduct2,
+    id: "17",
+    type: "Hot Drinks",
+    category: "featuredProduct",
+  },
+  {
+    price: "99.00",
+    image: featureProduct3,
+    id: "18",
+    type: "Hot Drinks",
+    category: "featuredProduct",
+  },
+  {
+    price: "156.00",
+    image: featureProduct4,
+    id: "19",
+    type: "Hot Drinks",
+    category: "featuredProduct",
+  },
+  {
+    price: "155.00",
+    image: featureProduct3,
+    id: "20",
+    type: "Meats",
+    category: "featuredProduct",
+  },
+  {
+    price: "225.00",
+    image: featureProduct6,
+    id: "21",
+    type: "Meats",
+    category: "featuredProduct",
+  },
+  {
+    price: "99.00",
+    image: featureProduct1,
+    id: "22",
+    type: "Meats",
+    category: "featuredProduct",
+  },
+  {
+    price: "156.00",
+    image: featureProduct9,
+    id: "23",
+    type: "Meats",
+    category: "featuredProduct",
   },
 ];
 
-const list = [slide1, slide2, slide3];
+// const list = [slide1, slide2, slide3];
 const sliderInformation = [
   {
     title: "Growing organic together",
     info: "100% Natural",
     semiInfo: "Quality and Freshness guaranteed!Good Health.",
-    buttonText: "Shop Next",
+    buttonText: "Shop Now",
     id: "1",
+    image: slide1,
   },
   {
     title: "daily fresh organic food",
@@ -69,6 +292,7 @@ const sliderInformation = [
     semiInfo: "Forn the Greatest Health Benefits! Refreshing & Tasty!",
     buttonText: "Find Out More",
     id: "2",
+    image: slide2,
   },
   {
     title: "save up to 35% off",
@@ -76,6 +300,7 @@ const sliderInformation = [
     semiInfo: "Most Popular Ecommerce HTML Template.",
     buttonText: "Order now",
     id: "3",
+    image: slide3,
   },
 ];
 const collectionsInformation = [
@@ -96,128 +321,6 @@ const collectionsInformation = [
     info: "strawberry",
     image: collection3,
     id: "3",
-  },
-];
-const featuredProducts = [
-  {
-    price: "155.00",
-    image: featureProduct1,
-    id: "1",
-    type: "Vegetables",
-  },
-  {
-    price: "225.00",
-    image: featureProduct2,
-    id: "2",
-    type: "Vegetables",
-  },
-  {
-    price: "99.00",
-    image: featureProduct3,
-    id: "3",
-    type: "Vegetables",
-  },
-  {
-    price: "156.00",
-    image: featureProduct4,
-    id: "4",
-    type: "Vegetables",
-  },
-  {
-    price: "155.00",
-    image: bestSeller1,
-    id: "5",
-    type: "Apples",
-  },
-  {
-    price: "225.00",
-    image: featureProduct5,
-    id: "6",
-    type: "Apples",
-  },
-  {
-    price: "99.00",
-    image: bestSeller3,
-    id: "7",
-    type: "Apples",
-  },
-  {
-    price: "156.00",
-    image: featureProduct6,
-    id: "8",
-    type: "Apples",
-  },
-  {
-    price: "155.00",
-    image: featureProduct6,
-    id: "9",
-    type: "Fruits",
-  },
-  {
-    price: "225.00",
-    image: bestSeller1,
-    id: "10",
-    type: "Fruits",
-  },
-  {
-    price: "99.00",
-    image: featureProduct7,
-    id: "11",
-    type: "Fruits",
-  },
-  {
-    price: "156.00",
-    image: featureProduct8,
-    id: "12",
-    type: "Fruits",
-  },
-  {
-    price: "155.00",
-    image: featureProduct1,
-    id: "13",
-    type: "Hot Drinks",
-  },
-  {
-    price: "225.00",
-    image: featureProduct2,
-    id: "14",
-    type: "Hot Drinks",
-  },
-  {
-    price: "99.00",
-    image: featureProduct3,
-    id: "15",
-    type: "Hot Drinks",
-  },
-  {
-    price: "156.00",
-    image: featureProduct4,
-    id: "16",
-    type: "Hot Drinks",
-  },
-  {
-    price: "155.00",
-    image: featureProduct3,
-    id: "17",
-    type: "Meats",
-  },
-  {
-    price: "225.00",
-    image: featureProduct6,
-    id: "18",
-    type: "Meats",
-  },
-  {
-    price: "99.00",
-    image: featureProduct1,
-    id: "19",
-    type: "Meats",
-  },
-  {
-    price: "156.00",
-    image: featureProduct9,
-    id: "20",
-    type: "Meats",
   },
 ];
 
@@ -360,146 +463,11 @@ const testimonialInformation = [
     id: "5",
   },
 ];
-const productData1 = [
-  {
-    price: "155.00",
-    image: featureProduct1,
-    id: "1",
-  },
-  {
-    price: "225.00",
-    image: featureProduct2,
-    id: "2",
-  },
-  {
-    price: "99.00",
-    image: featureProduct3,
-    id: "3",
-  },
-  {
-    price: "156.00",
-    image: featureProduct6,
-    id: "4",
-  },
-];
-const productData2 = [
-  {
-    price: "156.00",
-    image: featureProduct4,
-    id: "1",
-  },
-  {
-    price: "155.00",
-    image: bestSeller1,
-    id: "2",
-  },
-  {
-    price: "225.00",
-    image: featureProduct5,
-    id: "3",
-  },
-  {
-    price: "156.00",
-    image: featureProduct6,
-    id: "4",
-  },
-];
-const productData3 = [
-  {
-    price: "99.00",
-    image: bestSeller3,
-    id: "1",
-  },
-  {
-    price: "225.00",
-    image: bestSeller1,
-    id: "2",
-  },
-  {
-    price: "99.00",
-    image: featureProduct7,
-    id: "3",
-  },
-  {
-    price: "156.00",
-    image: featureProduct8,
-    id: "4",
-  },
-];
-const productData4 = [
-  {
-    price: "225.00",
-    image: bestSeller1,
-    id: "1",
-  },
-  {
-    price: "99.00",
-    image: featureProduct7,
-    id: "2",
-  },
-  {
-    price: "156.00",
-    image: featureProduct8,
-    id: "3",
-  },
-  {
-    price: "225.00",
-    image: featureProduct2,
-    id: "4",
-  },
-];
-const productData5 = [
-  {
-    price: "155.00",
-    image: featureProduct1,
-    id: "1",
-  },
-  {
-    price: "225.00",
-    image: featureProduct2,
-    id: "2",
-  },
-  {
-    price: "99.00",
-    image: featureProduct3,
-    id: "3",
-  },
-
-  {
-    price: "156.00",
-    image: featureProduct9,
-    id: "4",
-  },
-];
-const productData6 = [
-  {
-    price: "156.00",
-    image: featureProduct4,
-    id: "1",
-  },
-  {
-    price: "155.00",
-    image: featureProduct3,
-    id: "2",
-  },
-  {
-    price: "225.00",
-    image: featureProduct6,
-    id: "3",
-  },
-  {
-    price: "99.00",
-    image: featureProduct1,
-    id: "4",
-  },
-];
 
 export {
-  featuredProducts,
-  list,
   collectionsInformation,
   sliderInformation,
-  BestSellingProducts,
+  products,
   bannerInformation,
   blogInformation,
   brandContainer,
@@ -508,10 +476,4 @@ export {
   footerSocialIcons,
   footerPaymentIcons,
   testimonialInformation,
-  productData1,
-  productData2,
-  productData3,
-  productData4,
-  productData5,
-  productData6,
 };

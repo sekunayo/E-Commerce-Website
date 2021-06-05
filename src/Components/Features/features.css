@@ -1,8 +1,30 @@
+.features-container {
+  display: grid;
+  transition: all 0.5s;
+}
+@media only screen and (max-width: 767.98px) {
+  .features-container {
+    grid-template-columns: 12px 2fr 12px;
+  }
+}
+@media only screen and (min-width: 767.99px) and (max-width: 1199.98px) {
+  .features-container {
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+}
+@media only screen and (min-width: 1199.99px) {
+  .features-container {
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+}
+
 .inner-features-container {
   grid-column: 2/3;
   /* height: 50px; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
 }
 
 .feature {
@@ -17,12 +39,12 @@
   color: #666;
 }
 
-.feature p {
+.feature h6 {
   letter-spacing: 0.5px;
   color: #666;
   line-height: 1.1;
-  font-weight: 500;
   text-align: left;
+  font-size: 0.75rem;
 }
 
 .feature {

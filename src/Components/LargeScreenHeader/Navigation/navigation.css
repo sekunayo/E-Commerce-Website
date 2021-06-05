@@ -27,6 +27,10 @@
   display: grid;
   grid-template-columns: repeat(8, auto);
   grid-column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
 }
 
 .inner-navigation-container > p {
@@ -39,4 +43,5 @@
   text-transform: uppercase;
   text-align: center;
   color: white;
+  font-size: 0.75rem;
 }

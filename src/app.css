@@ -5,16 +5,44 @@
 
 @media only screen and (max-width: 767.98px) {
   .app-container {
-    grid-row-gap: 20px;
+    grid-row-gap: 10px;
   }
 }
 @media only screen and (min-width: 767.99px) and (max-width: 1199.98px) {
   .app-container {
+    grid-row-gap: 15px;
+  }
+}
+
+@media only screen and (min-width: 1199.99px) {
+  .app-container {
+    grid-row-gap: 15px;
+  }
+}
+.home__section__2 {
+  display: grid;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .home__section__2 {
+    grid-row-gap: 20px;
+  }
+}
+@media only screen and (min-width: 767.99px) and (max-width: 1199.98px) {
+  .home__section__2 {
     grid-row-gap: 30px;
   }
 }
+
 @media only screen and (min-width: 1199.99px) {
-  .app-container {
+  .home__section__2 {
     grid-row-gap: 30px;
   }
+}
+.pagination {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+}
+.pagination p {
+  grid-column: 2/3;
 }
