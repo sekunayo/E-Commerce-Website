@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
 function ProductOverlay(props) {
@@ -12,7 +12,7 @@ function ProductOverlay(props) {
         </div>
         <div class="overlay-button">
           <Link to="/wishlist" className="overlay__links">
-            <p>
+            <p onClick={props.eventHandler}>
               <i class="far fa-heart"></i>
             </p>
           </Link>

@@ -12,7 +12,7 @@ import WishlistPage from "./WishlistPage.js";
 import Compare from "./Compare.js";
 import CartPage from "./CartPage.js";
 import ShopPage from "./ShopPage.js";
-import ProductContextProvider from "./context/ProductContext.js";
+import ProductContextProvider from "./context/ProductContext";
 function App() {
   const [showModal, setshowModal] = useState(false);
   const onModal = () => {
@@ -31,14 +31,9 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/product">
+          <Route exact path="/product/:type/:id">
             <ProductPage />
           </Route>
-          <Route
-            exact
-            path="/product/:type/:id"
-            children={<ProductPage />}
-          ></Route>
           <Route exact path="/account">
             <AccountPage />
           </Route>
@@ -48,7 +43,6 @@ function App() {
           <Route exact path="/wishlist">
             <WishlistPage />
           </Route>
-          <Route exact path="/wishlist/:id" children={<WishlistPage />}></Route>
           <Route exact path="/compare">
             <Compare />
           </Route>

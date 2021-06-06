@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import Product from "../Product/Product.js";
-import { products, list } from "../../data.js";
 import "../FeaturedProduct/featuredProduct.css";
-import { Link } from "react-router-dom";
-const featuredProduct = products.filter(
-  (element) => element.category === "featuredProduct"
-);
-const newList = [...new Set(featuredProduct.map((element) => element.type))];
+import { ProductContext } from "../../context/ProductContext.js";
+
 function FeaturedProduct() {
+  const { productList, addToWishList } = useContext(ProductContext);
+  const featuredProduct = productList.filter(
+    (element) => element.category === "featuredProduct"
+  );
+  const newList = [...new Set(featuredProduct.map((element) => element.type))];
   const [defaultCategory, setDefaultCategory] = useState(
     featuredProduct.filter((element) => element.type === "Vegetables")
   );
@@ -71,18 +72,15 @@ function FeaturedProduct() {
         </ul>
         <div className="featured-box-container">
           {defaultCategory.map((element) => (
-            <Link
-              to={`/product/${element.type}/${element.id}`}
-              className="nav__link"
-            >
-              <Product
-                key={element.id}
-                image={element.image}
-                price={element.price}
-                class={"featured-box"}
-                id={element.id}
-              />
-            </Link>
+            <Product
+              key={element.id}
+              image={element.image}
+              price={element.price}
+              class={"featured-box"}
+              id={element.id}
+              type={element.type}
+              eventHandler={addToWishList(element.id)}
+            />
           ))}
         </div>
       </div>

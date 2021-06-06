@@ -3,15 +3,14 @@ import "../Wishlist/wishlist.css";
 import { ProductContext } from "../../context/ProductContext.js";
 
 function Wishlist() {
-  const [wishlist, setWishlist] = useState([]);
-  const { value1, value2 } = useContext(ProductContext);
+  const { wishlist } = useContext(ProductContext);
   return (
     <>
       <div className="wishlist__form__container">
         <div className="wishlist__form__container__form__box">
           <div className="wishlist__column">
             <h4 className="wishlist__column__heading"></h4>
-            {value1.map((element) => {
+            {wishlist.map((element) => {
               return (
                 <div className="wishlist__column__content">
                   <div className="wishlist__column__content__image">
@@ -23,7 +22,7 @@ function Wishlist() {
           </div>
           <div className="wishlist__column">
             <h4 className="wishlist__column__heading"></h4>
-            {value1.map((element) => {
+            {wishlist.map((element) => {
               return (
                 <div className="wishlist__column__content wishlist__column__product__box">
                   <p className="wishlist__product__name">{element.name}</p>
@@ -43,7 +42,7 @@ function Wishlist() {
           </div>
           <div className="wishlist__column">
             <h4 className="wishlist__column__heading">Quantity</h4>
-            {value1.map((element) => {
+            {wishlist.map((element) => {
               return (
                 <div className="wishlist__column__content center">
                   <form className="wishlist__quantity">
@@ -55,7 +54,7 @@ function Wishlist() {
           </div>
           <div className="wishlist__column">
             <h4 className="wishlist__column__heading">Price</h4>
-            {value1.map((element) => {
+            {wishlist.map((element) => {
               return (
                 <div className="wishlist__column__content center">
                   <p className="wishlist__price">${element.price * 2}.00</p>
@@ -65,7 +64,7 @@ function Wishlist() {
           </div>
           <div className="wishlist__column">
             <h4 className="wishlist__column__heading"></h4>
-            {value1.map((_) => {
+            {wishlist.map((_) => {
               return (
                 <div className="wishlist__column__content center">
                   <a className="wishlist__link">Edit</a>
@@ -75,7 +74,7 @@ function Wishlist() {
           </div>
           <div className="wishlist__column">
             <h4 className="wishlist__column__heading"></h4>
-            {value1.map((_) => {
+            {wishlist.map((_) => {
               return (
                 <div className="wishlist__column__content center">
                   <div className="wishlist--icon">
