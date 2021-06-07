@@ -5,14 +5,14 @@ function ShopItem(props) {
   return (
     <div className="shop__item">
       <div className="shop__item__image">
-        <img src={props.image}></img>
+        <img src={props.image} alt={"shop__product__image"}></img>
       </div>
       <div className="shop__item__description">
         <h4 className="shop__item__description__name">{props.name}</h4>
         <div className="shop__item__description__text">
           <p>
             {props.description}
-            <a>Learn More</a>
+            <a href="#tag">Learn More</a>
           </p>
         </div>
         <p className="shop__item__description__price">

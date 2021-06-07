@@ -9,7 +9,7 @@ function Error() {
           <h2>404</h2>
           <h3 class="error__inner__container__body__error__text">
             <span>
-              <img src={errorSignal}></img>
+              <img src={errorSignal} alt="error__image"></img>
             </span>
             <span>Oops! The Page you requested was not found!</span>
           </h3>

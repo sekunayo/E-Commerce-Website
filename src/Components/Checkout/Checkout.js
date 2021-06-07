@@ -63,7 +63,7 @@ function Checkout() {
               <label>Password</label>
               <input type="password"></input>
             </div>
-            <a>Forgot your password?</a>
+            <a href="#tag">Forgot your password?</a>
           </form>
           <div className="checkout__button__box">
             <button className="checkout__button__box__button">Login</button>

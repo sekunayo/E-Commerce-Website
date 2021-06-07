@@ -7,14 +7,14 @@ import FeaturedProduct from "./Components/FeaturedProduct/FeaturedProduct.js";
 import { sliderInformation, collectionsInformation } from "./data.js";
 import Banner from "./Components/Banner/Banner";
 import Blog from "./Components/Blog/Blog";
-import Sponsor from "./Components/Sponsor/Sponsor";
+// import Sponsor from "./Components/Sponsor/Sponsor";
 import Testimonial from "./Components/Testimonial/Testimonial";
 // import ProductContext from "./context/ProductContext.js";
 
 function Home() {
   const [slide, setSlide] = useState(0);
-  const [slideArray, setSlideArray] = useState(sliderInformation);
-  const [displayButton, setDisplayButton] = useState(true);
+  const [slideArray] = useState(sliderInformation);
+  const [displayButton] = useState(true);
   useEffect(() => {
     if (slide < 0) {
       setSlide(slideArray.length - 1);
@@ -79,6 +79,7 @@ function Home() {
             }
             return (
               <Slider
+                key={element.id}
                 image={element.image}
                 slideText={element.text}
                 title={element.title}
@@ -93,7 +94,7 @@ function Home() {
         </div>
       </div>
       <div className="collections-container">
-        <div class="inner-collections-container">
+        <div className="inner-collections-container">
           {collectionsInformation.map((element) => (
             <Collections
               title={element.title}

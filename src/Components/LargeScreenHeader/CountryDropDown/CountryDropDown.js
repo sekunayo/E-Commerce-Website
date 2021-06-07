@@ -10,49 +10,49 @@ function CountryDropDown() {
   return (
     <ul name="" id="" className="inner-country-dropdown absolute ">
       <li>
-        <a>
+        <a href="#tag">
           <span>
-            <img src={english} alt="" srcSet=""></img>
+            <img src={english} alt="country__logo"></img>
           </span>
           <span>English</span>
         </a>
       </li>
       <li>
-        <a>
+        <a href="#tag">
           <span>
-            <img src={french} alt="" srcSet=""></img>
+            <img src={french} alt="country__logo"></img>
           </span>
           <span>French</span>
         </a>
       </li>
       <li>
-        <a>
+        <a href="#tag">
           <span>
-            <img src={german} alt="" srcSet=""></img>
+            <img src={german} alt="country__logo"></img>
           </span>
           <span>German</span>
         </a>
       </li>
       <li>
-        <a>
+        <a href="#tag">
           <span>
-            <img src={brazil} alt="" srcSet=""></img>
+            <img src={brazil} alt="country__logo"></img>
           </span>
           <span>Brazil</span>
         </a>
       </li>
       <li>
-        <a>
+        <a href="#tag">
           <span>
-            <img src={chile} alt="" srcSet=""></img>
+            <img src={chile} alt="country__logo"></img>
           </span>
           <span>Chile</span>
         </a>
       </li>
       <li>
-        <a>
+        <a href="#tag">
           <span>
-            <img src={spain} alt="" srcSet=""></img>
+            <img src={spain} alt="country__logo"></img>
           </span>
           <span>Spain</span>
         </a>

@@ -1,8 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import Product from "../Product/Product.js";
 import "../BestSelling/bestSelling.css";
-import specialProduct from "../../images/special-product-bg.jpg";
-import { Link } from "react-router-dom";
 import { ProductContext } from "../../context/ProductContext.js";
 function BestSelling(props) {
   const [bestProduct, setBestProduct] = useState([]);
@@ -19,10 +17,10 @@ function BestSelling(props) {
         <h3 className="best__selling__header">best selling products</h3>
         <div className="best-selling-products-container">
           <div className="best__selling__left__arrow best__selling__arrow">
-            <i class="fas fa-chevron-left"></i>
+            <i className="fas fa-chevron-left"></i>
           </div>
           <div className="best__selling__right__arrow best__selling__arrow">
-            <i class="fas fa-chevron-right"></i>
+            <i className="fas fa-chevron-right"></i>
           </div>
           {bestProduct.map((element) => (
             <Product

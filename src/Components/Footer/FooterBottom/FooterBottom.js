@@ -12,9 +12,9 @@ function FooterBottom() {
           Reserved.
         </p>
         <div className="footer-payment-container">
-          {footerPaymentIcons.map((element) => {
+          {footerPaymentIcons.map((element, index) => {
             return (
-              <div className="footer-payment-box">
+              <div className="footer-payment-box" key={index}>
                 <img src={element} alt=""></img>
               </div>
             );

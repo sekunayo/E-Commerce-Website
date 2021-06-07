@@ -26,8 +26,7 @@ function Header(props) {
     setService(!service);
     setCountry(false);
     setCurrency(false);
-  }
-  
+  };
 
   return (
     <header className="header">
@@ -41,7 +40,7 @@ function Header(props) {
                 onClick={countryHandler}
               >
                 <li className="special-list-item">
-                  <a href="">
+                  <a href="#tag">
                     <span className="header__country__image">
                       <img src={english} alt="" srcSet=""></img>
                     </span>
@@ -55,7 +54,7 @@ function Header(props) {
               </ul>
               <ul className="relative" onClick={currencyHandler}>
                 <li className="special-list-item">
-                  <a href="">
+                  <a href="#tag">
                     <span>USD</span>
                     <span className="caret">
                       <i className="fas fa-caret-down"></i>
@@ -85,7 +84,7 @@ function Header(props) {
               </p>
               <ul className="relative" onClick={serviceHandler}>
                 <li className="special-list-item">
-                  <a href="">
+                  <a href="#tag">
                     <span>About us</span>
                     <span className="caret">
                       <i className="fas fa-caret-down"></i>
@@ -114,7 +113,7 @@ function Header(props) {
           </div>
           <div className="small-modal-container">
             <div className="modal-open-icon">
-              <i class="fas fa-bars" onClick={props.onModal}></i>
+              <i className="fas fa-bars" onClick={props.onModal}></i>
             </div>
             <div className="logo-container">
               <img src={logo} alt="" srcSet=""></img>

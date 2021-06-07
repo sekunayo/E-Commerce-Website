@@ -16,7 +16,7 @@ function OrderTable(props) {
             return (
               <div className="order__column__content">
                 <div className="order__column__content__image">
-                  <img src={element.image}></img>
+                  <img src={element.image} alt="order__image"></img>
                 </div>
               </div>
             );

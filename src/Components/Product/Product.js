@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Product/product.css";
 import ProductOverlay from "./ProductOverlay/ProductOverlay";
@@ -13,40 +13,40 @@ function Product(props) {
   };
 
   return (
-    <div class={`product-box ${props.class}`}>
+    <div className={`product-box ${props.className}`}>
       <div
-        class="product-image-box"
+        className="product-image-box"
         onMouseEnter={mouseEnter}
         onMouseLeave={mouseLeave}
       >
-        <img src={props.image} alt="" srcset=""></img>
+        <img src={props.image} alt=""></img>
         {overlay && <ProductOverlay eventHandler={props.eventHandler} />}
       </div>
-      <div class="product-text-box">
+      <div className="product-text-box">
         <Link to={`/product/${props.type}/${props.id}`} className="nav__link">
-          <p class="product-title">Product Title Here</p>
+          <p className="product-title">Product Title Here</p>
         </Link>
-        <p class="product-rating">
+        <p className="product-rating">
           <span>
-            <i class="far fa-star"></i>
+            <i className="far fa-star"></i>
           </span>
           <span>
-            <i class="far fa-star"></i>
+            <i className="far fa-star"></i>
           </span>
           <span>
-            <i class="far fa-star"></i>
+            <i className="far fa-star"></i>
           </span>
           <span>
-            <i class="far fa-star"></i>
+            <i className="far fa-star"></i>
           </span>
           <span>
-            <i class="far fa-star"></i>
+            <i className="far fa-star"></i>
           </span>
         </p>
-        <p class="product-price">{props.price}</p>
-        <div class="product-button-container">
+        <p className="product-price">{props.price}</p>
+        <div className="product-button-container">
           <Link to="/cart">
-            <button class="product-button">Add to Cart</button>
+            <button className="product-button">Add to Cart</button>
           </Link>
         </div>
       </div>

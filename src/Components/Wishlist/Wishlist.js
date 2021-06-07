@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import "../Wishlist/wishlist.css";
 import { ProductContext } from "../../context/ProductContext.js";
 
@@ -9,19 +9,22 @@ function Wishlist() {
       <div className="wishlist__form__container">
         <div className="wishlist__form__container__form__box">
           <div className="wishlist__column">
-            <h4 className="wishlist__column__heading"></h4>
+            <h4 className="wishlist__column__heading">{""}</h4>
             {wishlist.map((element) => {
               return (
                 <div className="wishlist__column__content">
                   <div className="wishlist__column__content__image">
-                    <img src={element.image}></img>
+                    <img
+                      src={element.image}
+                      alt="wishlist__product__image"
+                    ></img>
                   </div>
                 </div>
               );
             })}
           </div>
           <div className="wishlist__column">
-            <h4 className="wishlist__column__heading"></h4>
+            <h4 className="wishlist__column__heading">{""}</h4>
             {wishlist.map((element) => {
               return (
                 <div className="wishlist__column__content wishlist__column__product__box">
@@ -63,17 +66,19 @@ function Wishlist() {
             })}
           </div>
           <div className="wishlist__column">
-            <h4 className="wishlist__column__heading"></h4>
+            <h4 className="wishlist__column__heading">{""}</h4>
             {wishlist.map((_) => {
               return (
                 <div className="wishlist__column__content center">
-                  <a className="wishlist__link">Edit</a>
+                  <a href="#tag" className="wishlist__link">
+                    Edit
+                  </a>
                 </div>
               );
             })}
           </div>
           <div className="wishlist__column">
-            <h4 className="wishlist__column__heading"></h4>
+            <h4 className="wishlist__column__heading">{""}</h4>
             {wishlist.map((_) => {
               return (
                 <div className="wishlist__column__content center">

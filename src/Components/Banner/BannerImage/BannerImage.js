@@ -3,8 +3,8 @@ import "../BannerImage/bannerImage.css";
 
 function BannerImage(props) {
   return (
-    <div class="banner-image-box">
-      <img src={props.image} alt="" srcset=""></img>
+    <div className="banner-image-box">
+      <img src={props.image} alt=""></img>
     </div>
   );
 }

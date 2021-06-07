@@ -8,7 +8,7 @@ function CompareProduct() {
       <div className="compare__form__container">
         <div className="compare__form__container__form__box">
           <div className="compare__row">
-            <h4 className="compare__row__heading"></h4>
+            <h4 className="compare__row__heading">{""}</h4>
             {orderProducts.map((element) => {
               return (
                 <div className="compare__row__content">
@@ -16,7 +16,10 @@ function CompareProduct() {
                     <i className="fas fa-times"></i>
                   </div>
                   <div className="compare__row__content__image">
-                    <img src={element.image}></img>
+                    <img
+                      src={element.image}
+                      alt="compare__product__image"
+                    ></img>
                   </div>
                   <h4 className="compare__product__name">{element.name}</h4>
                 </div>
@@ -48,7 +51,7 @@ function CompareProduct() {
             })}
           </div>
           <div className="compare__row">
-            <h4 className="compare__row__heading"></h4>
+            <h4 className="compare__row__heading">{""}</h4>
             {orderProducts.map((element) => {
               return (
                 <div className="compare__footer ">

@@ -6,13 +6,15 @@ function FooterMiddle() {
   return (
     <div className="footer-middle">
       <div className="inner-footer-middle">
-        {footerNavLinks.map((element) => {
+        {footerNavLinks.map((element, index) => {
           return (
-            <div className="footer-nav-link-container">
+            <div className="footer-nav-link-container" key={index}>
               <h5 className="footer-header-nav-link">{element.title}</h5>
               <ul>
-                {element.links.map((element) => (
-                  <li className="footer-nav-link">{element}</li>
+                {element.links.map((element, index) => (
+                  <li className="footer-nav-link" key={index}>
+                    {element}
+                  </li>
                 ))}
               </ul>
             </div>
@@ -42,9 +44,9 @@ function FooterMiddle() {
             <div className="footer-social-container">
               <h5 className="footer-header-nav-link">Follow us</h5>
               <div className="footer-inner-social-container">
-                {footerSocialIcons.map((element) => {
+                {footerSocialIcons.map((element, index) => {
                   return (
-                    <div className="footer-social-icons">
+                    <div className="footer-social-icons" key={index}>
                       <i className={element}></i>
                     </div>
                   );

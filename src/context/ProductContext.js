@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 export const ProductContext = createContext();
 
 function ProductContextProvider(props) {
-  const [product, setProduct] = useState(products);
+  const [product] = useState(products);
   const [wishlist, setWishlist] = useState([]);
   const history = useHistory();
   useEffect(() => {

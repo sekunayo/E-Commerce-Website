@@ -7,7 +7,7 @@ function ProductDescription(props) {
     <div className="productDescription">
       <div class="productDescription__inner__container">
         <div className="productDescription__image">
-          <img src={props.image}></img>
+          <img src={props.image} alt={"product__description__image"}></img>
         </div>
         <ProductDescriptionText price={props.price} />
       </div>

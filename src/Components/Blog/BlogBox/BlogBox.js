@@ -5,11 +5,11 @@ function BlogBox(props) {
   return (
     <div className="blog-box">
       <div className="blog-image-box">
-        <img src={props.image} alt="" srcset=""></img>
+        <img src={props.image} alt=""></img>
       </div>
       <div className="blog-content-box">
         <h4>
-          <a href="" className="blog-title">
+          <a href="#tag" className="blog-title">
             {props.title}
           </a>
         </h4>
@@ -39,7 +39,7 @@ function BlogBox(props) {
           Lorem ipsum dolor sit ame consetur adipisicing elit. Voluptate,
           consetur adipisicing elit.Lorem ipsum dolor.
         </p>
-        <a href="" className="blog-read-more">
+        <a href="#tag" className="blog-read-more">
           Read More
           <span>
             <i className="fas fa-long-arrow-alt-right"></i>

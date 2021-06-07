@@ -31,7 +31,7 @@ function Slider(props) {
               <button className="slider-button">
                 {props.buttonText}{" "}
                 <span>
-                  <i class="fas fa-caret-right"></i>
+                  <i className="fas fa-caret-right"></i>
                 </span>
               </button>
             </Link>

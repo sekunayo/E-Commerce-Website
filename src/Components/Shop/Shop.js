@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ShopItem from "./ShopItem/ShopItem";
 import { products } from "../../data.js";
 function Shop() {

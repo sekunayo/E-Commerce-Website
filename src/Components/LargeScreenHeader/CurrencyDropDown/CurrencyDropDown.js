@@ -4,17 +4,17 @@ function CurrencyDropDown() {
   return (
     <ul name="" id="" className="inner-currency-dropdown absolute">
       <li>
-        <a>
+        <a href="#tag">
           <span>$ - Dollar</span>
         </a>
       </li>
       <li>
-        <a>
+        <a href="#tag">
           <span> £ - Pound </span>
         </a>{" "}
       </li>
       <li>
-        <a>
+        <a href="#tag">
           <span> € - Euro </span>
         </a>
       </li>

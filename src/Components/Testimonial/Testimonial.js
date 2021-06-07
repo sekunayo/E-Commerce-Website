@@ -4,7 +4,7 @@ import { testimonialInformation } from "../../data.js";
 
 function Testimonial() {
   const [slider, setSlider] = useState(0);
-  const [allPictures, setAllPictures] = useState(testimonialInformation);
+  const [allPictures] = useState(testimonialInformation);
   const lastIndex = testimonialInformation.length - 1;
 
   useEffect(() => {
@@ -14,7 +14,7 @@ function Testimonial() {
     if (slider > lastIndex) {
       setSlider(0);
     }
-  }, [slider, testimonialInformation]);
+  }, [slider, lastIndex]);
 
   useEffect(() => {
     let slideInterval = setInterval(() => {
@@ -33,13 +33,12 @@ function Testimonial() {
             <div className="testimonial-pictures-container">
               {allPictures.map((element) => {
                 let active = "testimonial-image-box";
-                {
-                  if (Number(element.id) === slider) {
-                    active = "testimonial-active-box";
-                  }
+                if (Number(element.id) === slider) {
+                  active = "testimonial-active-box";
                 }
+
                 return (
-                  <div className={`${active}`}>
+                  <div className={`${active}`} key={element.id}>
                     <img src={element.img} alt=""></img>
                   </div>
                 );
