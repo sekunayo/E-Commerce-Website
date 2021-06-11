@@ -1,6 +1,5 @@
 import React,{useContext} from "react";
 import OrderTable from "./OrderTable/OrderTable.js";
-import { products } from "../../data.js";
 import {ProductContext} from '../../context/ProductContext';
 
 function Order() {

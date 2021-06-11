@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../Testimonial/testimonial.css";
 import { testimonialInformation } from "../../data.js";
 
@@ -24,6 +24,7 @@ function Testimonial() {
                     <div
                       className="each__testimonial__box"
                       onClick={onClickHandler(element.id)}
+                      key = {element.id}
                     >
                       <div className="testimonial__image__box">
                         <img src={element.img} alt="testimonial__image"></img>

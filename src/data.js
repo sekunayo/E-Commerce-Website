@@ -32,8 +32,6 @@ import payment4 from "../src/images/payment-4.png";
 import testimonial1 from "../src/images/testimonials-img1.jpg";
 import testimonial2 from "../src/images/testimonials-img2.jpg";
 import testimonial3 from "../src/images/testimonials-img3.jpg";
-import testimonial4 from "../src/images/testimonials-img4.jpg";
-import testimonial5 from "../src/images/testimonials-img5.jpg";
 
 const brandContainer = [brand1, brand2, brand3, brand4, brand5, brand6];
 const products = [
