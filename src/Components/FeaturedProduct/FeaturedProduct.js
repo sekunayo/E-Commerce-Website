@@ -4,7 +4,7 @@ import "../FeaturedProduct/featuredProduct.css";
 import { ProductContext } from "../../context/ProductContext.js";
 
 function FeaturedProduct() {
-  const { productList, addToWishList } = useContext(ProductContext);
+  const { productList, addToWishList,addToCart } = useContext(ProductContext);
   const featuredProduct = productList.filter(
     (element) => element.category === "featuredProduct"
   );
@@ -80,6 +80,7 @@ function FeaturedProduct() {
               id={element.id}
               type={element.type}
               eventHandler={addToWishList(element.id)}
+              cartClickHandler = {addToCart(element.id)}
             />
           ))}
         </div>

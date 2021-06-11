@@ -437,30 +437,21 @@ const testimonialInformation = [
     title: "CEO, ABC Softwear",
     img: testimonial1,
     id: "1",
+    heading: "It was a great experience!",
   },
   {
     name: "John Doe",
     title: "CEO, ABC Softwear",
     img: testimonial2,
     id: "2",
+    heading: "Nice customer service",
   },
   {
     name: "John Doe",
     title: "CEO, ABC Softwear",
     img: testimonial3,
     id: "3",
-  },
-  {
-    name: "Vince Roy",
-    title: "CEO, ABC Softwear",
-    img: testimonial4,
-    id: "4",
-  },
-  {
-    name: "John Doe",
-    title: "CEO, ABC Softwear",
-    img: testimonial5,
-    id: "5",
+    heading: "Prompt delivery",
   },
 ];
 

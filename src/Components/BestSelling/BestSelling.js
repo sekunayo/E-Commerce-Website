@@ -4,7 +4,7 @@ import "../BestSelling/bestSelling.css";
 import { ProductContext } from "../../context/ProductContext.js";
 function BestSelling(props) {
   const [bestProduct, setBestProduct] = useState([]);
-  const { productList, addToWishList } = useContext(ProductContext);
+  const { productList, addToWishList,addToCart } = useContext(ProductContext);
   useEffect(() => {
     const bestSellingProduct = productList.filter(
       (element) => element.category === "bestSelling"
@@ -30,6 +30,7 @@ function BestSelling(props) {
               id={element.id}
               type={element.type}
               eventHandler={addToWishList(element.id)}
+              cartClickHandler = {addToCart(element.id)}
             />
           ))}
         </div>

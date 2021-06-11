@@ -45,9 +45,7 @@ function Product(props) {
         </p>
         <p className="product-price">{props.price}</p>
         <div className="product-button-container">
-          <Link to="/cart">
-            <button className="product-button">Add to Cart</button>
-          </Link>
+            <button className="product-button" onClick={props.cartClickHandler}>Add to Cart</button>
         </div>
       </div>
     </div>

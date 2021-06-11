@@ -24,8 +24,22 @@
 .inner-slider-container {
   grid-column: 2/3;
   position: relative;
-  height: 500px;
   overflow: hidden;
+}
+@media only screen and (max-width: 767.98px) {
+  .inner-slider-container {
+    height: 220px;
+  }
+}
+@media only screen and (max-width: 767.99px) and (min-width: 1199.98px) {
+  .inner-slider-container {
+    height: 500px;
+  }
+}
+@media only screen and (min-width: 1199.99px) {
+  .inner-slider-container {
+    height: 500px;
+  }
 }
 article {
   position: absolute;

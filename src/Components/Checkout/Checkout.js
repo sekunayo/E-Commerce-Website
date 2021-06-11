@@ -1,6 +1,7 @@
 import React from "react";
 import "../Checkout/checkout.css";
 
+
 function Checkout() {
   return (
     <div className="checkout__inner__container__form__container">

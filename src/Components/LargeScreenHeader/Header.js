@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../LargeScreenHeader/header.css";
 import CountryDropDown from "./CountryDropDown/CountryDropDown.js";
@@ -12,6 +12,7 @@ function Header(props) {
   const [country, setCountry] = useState(false);
   const [currency, setCurrency] = useState(false);
   const [service, setService] = useState(false);
+
   const countryHandler = () => {
     setCountry(!country);
     setCurrency(false);
