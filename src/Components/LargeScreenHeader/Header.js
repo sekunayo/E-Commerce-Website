@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import "../LargeScreenHeader/header.css";
 import CountryDropDown from "./CountryDropDown/CountryDropDown.js";
@@ -7,26 +7,47 @@ import ServicesDropDown from "./ServicesDropDown/ServicesDropDown.js";
 import Navigation from "./Navigation/Navigation.js";
 import english from "../../images/flag-english.jpg";
 import logo from "../../images/logo.png";
-
+import CartOverlay from "../Cart/CartOverlay/CartOverlay";
+import { ProductContext } from "../../context/ProductContext";
 function Header(props) {
   const [country, setCountry] = useState(false);
   const [currency, setCurrency] = useState(false);
   const [service, setService] = useState(false);
+  const [cartList, setCartList] = useState(false);
+  const { cart, cartTotal } = useContext(ProductContext);
 
   const countryHandler = () => {
-    setCountry(!country);
-    setCurrency(false);
-    setService(false);
+    return () => {
+      setCountry(!country);
+      setCurrency(false);
+      setService(false);
+    };
   };
   const currencyHandler = () => {
-    setCurrency(!currency);
-    setCountry(false);
-    setService(false);
+    return () => {
+      setCurrency(!currency);
+      setCountry(false);
+      setService(false);
+    };
   };
   const serviceHandler = () => {
-    setService(!service);
-    setCountry(false);
-    setCurrency(false);
+    return () => {
+      setService(!service);
+      setCountry(false);
+      setCurrency(false);
+    };
+  };
+  const displayCart = () => {
+    return (e) => {
+      e.preventDefault();
+      setCartList(!cartList);
+    };
+  };
+  const onMouseLeave = () => {
+    return (e) => {
+      e.preventDefault();
+      setCartList(false);
+    };
   };
 
   return (
@@ -38,7 +59,7 @@ function Header(props) {
               <p className="left__inner__nav__text">Welcome to Organic!</p>
               <ul
                 className="drop-down-country relative"
-                onClick={countryHandler}
+                onClick={countryHandler()}
               >
                 <li className="special-list-item">
                   <a href="#tag">
@@ -53,7 +74,7 @@ function Header(props) {
                 </li>
                 {country && <CountryDropDown />}
               </ul>
-              <ul className="relative" onClick={currencyHandler}>
+              <ul className="relative" onClick={currencyHandler()}>
                 <li className="special-list-item">
                   <a href="#tag">
                     <span>USD</span>
@@ -83,7 +104,7 @@ function Header(props) {
                   Checkout
                 </Link>
               </p>
-              <ul className="relative" onClick={serviceHandler}>
+              <ul className="relative" onClick={serviceHandler()}>
                 <li className="special-list-item">
                   <a href="#tag">
                     <span>About us</span>
@@ -103,13 +124,18 @@ function Header(props) {
           </div>
         </nav>
         <div className="logo-nav-container">
-          <div className="cart-collection-button">
-            <button>
+          <div className="cart-collection-buttons">
+            <button
+              className="cart-collection-button"
+              onClick={displayCart()}
+              onMouseLeave={onMouseLeave()}
+            >
               <span>
-                <i className="fas fa-shopping-bag"></i>
+                <i className="fas fa-shopping-bag cart-collection-buttons-icon"></i>
               </span>
-              <span className="cart-price">2</span>
-              <span className="cart-content"> MY BAG / $259.00 </span>
+              <span className="cart-price">{cart.length}</span>
+              <span className="cart-content"> MY BAG / ${cartTotal} </span>
+              {cartList && <CartOverlay />}
             </button>
           </div>
           <div className="small-modal-container">

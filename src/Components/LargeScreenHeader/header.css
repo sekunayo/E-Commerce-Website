@@ -140,26 +140,26 @@ nav {
   }
 }
 
-.cart-collection-button {
+.cart-collection-buttons {
   display: flex;
 }
 @media only screen and (max-width: 767.98px) {
-  .cart-collection-button {
+  .cart-collection-buttons {
     align-items: center;
   }
 }
 @media only screen and (min-width: 767.99px) and (max-width: 1199.98px) {
-  .cart-collection-button {
+  .cart-collection-buttons {
     align-items: center;
   }
 }
 @media only screen and (min-width: 1199.99px) {
-  .cart-collection-button {
+  .cart-collection-buttons {
     align-items: center;
   }
 }
 
-.cart-collection-button button {
+.cart-collection-button {
   color: #333;
   line-height: 17px;
   background: #fff;
@@ -175,9 +175,10 @@ nav {
   justify-content: center;
   align-items: center;
   font-family: "Poppins", sans-serif;
+  position: relative;
 }
 
-.cart-collection-button button i {
+.cart-collection-buttons-icon {
   font-size: 1rem;
   color: #fdae03;
 }

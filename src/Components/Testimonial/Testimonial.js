@@ -24,7 +24,7 @@ function Testimonial() {
                     <div
                       className="each__testimonial__box"
                       onClick={onClickHandler(element.id)}
-                      key = {element.id}
+                      key={element.id}
                     >
                       <div className="testimonial__image__box">
                         <img src={element.img} alt="testimonial__image"></img>
@@ -39,25 +39,11 @@ function Testimonial() {
               </div>
               <div className="testimonial__box__second__box">
                 <div className="testimonial-text-container">
-                  <h3 className="testimonial__text__container__heading">
+                  <h3 className="testimonial__text__container__heading ">
                     {currentElement.heading}
                   </h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. .
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. .
-                  </p>
+                  <p>{currentElement.description}</p>
+                  <p>{currentElement["sub-description"]}</p>
                 </div>
               </div>
             </div>

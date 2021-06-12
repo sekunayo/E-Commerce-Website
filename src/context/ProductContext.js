@@ -7,7 +7,7 @@ export const ProductContext = createContext();
 function ProductContextProvider(props) {
   const [product] = useState(products);
   const [wishlist, setWishlist] = useState([]);
-  const [cart,setCart] = useState([]);
+  const [cart, setCart] = useState([]);
   const history = useHistory();
   useEffect(() => {
     let data = localStorage.getItem("wishlist");
@@ -37,9 +37,7 @@ function ProductContextProvider(props) {
   const addToCart = (id) => (e) => {
     e.preventDefault();
     const newElement = product.find((element) => id === element.id);
-    const booleanValue = cart.some(
-      (element) => element.id === newElement.id
-    );
+    const booleanValue = cart.some((element) => element.id === newElement.id);
     if (!booleanValue) {
       let newList = [...cart, newElement];
       localStorage.setItem("cart", JSON.stringify(newList));
@@ -47,7 +45,9 @@ function ProductContextProvider(props) {
       history.push("/cart");
     }
   };
-
+  const cartTotal = cart.reduce((acc, cu) => {
+    return acc + Number(cu.price);
+  }, 0);
   return (
     <ProductContext.Provider
       value={{
@@ -55,7 +55,8 @@ function ProductContextProvider(props) {
         wishlist,
         cart,
         addToWishList,
-        addToCart
+        addToCart,
+        cartTotal,
       }}
     >
       {props.children}
