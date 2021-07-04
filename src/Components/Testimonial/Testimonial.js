@@ -27,7 +27,7 @@ function Testimonial() {
                       key={element.id}
                     >
                       <div className="testimonial__image__box">
-                        <img src={element.img} alt="testimonial__image"></img>
+                        <img src={element.img} alt="testimonial"></img>
                       </div>
                       <div className="testimonial__title__description">
                         <p className="name">{element.name}</p>

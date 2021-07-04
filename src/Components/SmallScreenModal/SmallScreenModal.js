@@ -10,36 +10,36 @@ function SmallScreenModal(props) {
             <input type="search" placeholder="Search..."></input>
           </form>
           <div className="modal-search-icon">
-            <i class="fas fa-search"></i>
+            <i className="fas fa-search"></i>
           </div>
         </div>
         <div className="close-modal">
-          <i class="fas fa-times" onClick={props.offModal}></i>
+          <i className="fas fa-times" onClick={props.offModal}></i>
         </div>
       </div>
       <div className="close-modal"></div>
       <div className="modal-nav-link uppercase">
         <p>Home</p>
         <div className="modal-plus-icon">
-          <i class="fas fa-plus"></i>
+          <i className="fas fa-plus"></i>
         </div>
       </div>
       <div className="modal-nav-link uppercase">
         <p>Pages</p>
         <div className="modal-plus-icon">
-          <i class="fas fa-plus"></i>
+          <i className="fas fa-plus"></i>
         </div>
       </div>
       <div className="modal-nav-link uppercase">
         <p>Fruits</p>
         <div className="modal-plus-icon">
-          <i class="fas fa-plus"></i>
+          <i className="fas fa-plus"></i>
         </div>
       </div>
       <div className="modal-nav-link uppercase">
         <p>Vegetables</p>
         <div className="modal-plus-icon">
-          <i class="fas fa-plus"></i>
+          <i className="fas fa-plus"></i>
         </div>
       </div>
       <div className="modal-nav-link uppercase">

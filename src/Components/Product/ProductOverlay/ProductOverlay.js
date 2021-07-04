@@ -3,23 +3,23 @@ import { Link } from "react-router-dom";
 
 function ProductOverlay(props) {
   return (
-    <div class="product-overlay-container">
-      <div class="product-overlay-buttons">
-        <div class="overlay-button">
+    <div className="product-overlay-container">
+      <div className="product-overlay-buttons">
+        <div className="overlay-button">
           <p>
-            <i class="fas fa-search-plus"></i>
+            <i className ="fas fa-search-plus"></i>
           </p>
         </div>
-        <div class="overlay-button">
+        <div className="overlay-button">
           <Link to="/wishlist" className="overlay__links">
             <p onClick={props.eventHandler}>
-              <i class="far fa-heart"></i>
+              <i className="far fa-heart"></i>
             </p>
           </Link>
         </div>
-        <div class="overlay-button">
+        <div className="overlay-button">
           <p>
-            <i class="fas fa-random"></i>
+            <i className="fas fa-random"></i>
           </p>
         </div>
       </div>

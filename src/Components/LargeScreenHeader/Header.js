@@ -56,7 +56,9 @@ function Header(props) {
         <nav>
           <div className="left-nav">
             <div className="left-inner-nav">
-              <p className="left__inner__nav__text">Welcome to Organic!</p>
+              <Link className="nav__link" to="/">
+                <p className="left__inner__nav__text">Welcome to Organic!</p>
+              </Link>
               <ul
                 className="drop-down-country relative"
                 onClick={countryHandler()}
@@ -64,7 +66,7 @@ function Header(props) {
                 <li className="special-list-item">
                   <a href="#tag">
                     <span className="header__country__image">
-                      <img src={english} alt="" srcSet=""></img>
+                      <img src={english} alt="country" srcSet=""></img>
                     </span>
                     <span>English</span>
                     <span>
@@ -143,7 +145,7 @@ function Header(props) {
               <i className="fas fa-bars" onClick={props.onModal}></i>
             </div>
             <div className="logo-container">
-              <img src={logo} alt="" srcSet=""></img>
+              <img src={logo} alt="logo" srcSet=""></img>
             </div>
           </div>
 

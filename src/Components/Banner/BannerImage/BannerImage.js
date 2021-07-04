@@ -4,7 +4,7 @@ import "../BannerImage/bannerImage.css";
 function BannerImage(props) {
   return (
     <div className="banner-image-box">
-      <img src={props.image} alt=""></img>
+      <img src={props.image} alt="banner"></img>
     </div>
   );
 }

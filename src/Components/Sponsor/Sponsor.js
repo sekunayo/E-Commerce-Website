@@ -10,7 +10,7 @@ function Sponsor() {
         {brandContainer.map((element, index) => {
           return (
             <div className="sponsor-image-box">
-              <img src={element} alt="" key={index}></img>
+              <img src={element} alt="sponsor" key={index}></img>
             </div>
           );
         })}

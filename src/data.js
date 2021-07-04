@@ -390,9 +390,6 @@ const footerNavLinks = [
     title: "Useful Links",
     links: [
       "Product Recall",
-      "Gift Vouchers",
-      "Returns & Exchange",
-      "Shipping Options",
       "Help & FAQs",
       "Order History",
     ],
@@ -404,16 +401,11 @@ const footerNavLinks = [
       "Wishlist",
       "Shopping Cart",
       "Return Policy",
-      "Special",
-      "Lookbook",
     ],
   },
   {
     title: "Information",
     links: [
-      "Sites Map",
-      "News",
-      "Trends",
       "About us",
       "Contact us",
       "My Orders",

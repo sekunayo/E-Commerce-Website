@@ -15,7 +15,7 @@ function FooterBottom() {
           {footerPaymentIcons.map((element, index) => {
             return (
               <div className="footer-payment-box" key={index}>
-                <img src={element} alt=""></img>
+                <img src={element} alt="footer-payments-platform"></img>
               </div>
             );
           })}

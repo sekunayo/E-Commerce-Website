@@ -16,7 +16,7 @@ function OrderTable(props) {
             return (
               <div className="order__column__content">
                 <div className="order__column__content__image">
-                  <img src={element.image} alt="order__image"></img>
+                  <img src={element.image} alt="order"></img>
                 </div>
               </div>
             );
@@ -86,13 +86,13 @@ function OrderTable(props) {
         </div>
         <div className="order__column">
           <h4 className="order__column__heading">
-            <i class="far fa-trash-alt"></i>
+            <i className="far fa-trash-alt"></i>
           </h4>
           {props.products.map((_) => {
             return (
               <div className="order__column__content">
                 <div className="order--icon">
-                  <i class="fas fa-times"></i>
+                  <i className="fas fa-times"></i>
                 </div>
               </div>
             );

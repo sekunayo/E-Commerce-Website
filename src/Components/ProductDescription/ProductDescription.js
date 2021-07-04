@@ -5,9 +5,9 @@ import "../ProductDescription/productDescription.css";
 function ProductDescription(props) {
   return (
     <div className="productDescription">
-      <div class="productDescription__inner__container">
+      <div className="productDescription__inner__container">
         <div className="productDescription__image">
-          <img src={props.image} alt={"product__description__image"}></img>
+          <img src={props.image} alt={"product__description"}></img>
         </div>
         <ProductDescriptionText price={props.price} />
       </div>

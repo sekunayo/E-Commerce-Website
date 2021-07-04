@@ -5,7 +5,7 @@ function BlogBox(props) {
   return (
     <div className="blog-box">
       <div className="blog-image-box">
-        <img src={props.image} alt=""></img>
+        <img src={props.image} alt="blog"></img>
       </div>
       <div className="blog-content-box">
         <h4>

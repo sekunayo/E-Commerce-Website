@@ -35,13 +35,13 @@ function WishlistPage() {
               <li>
                 Balls vs Sofa
                 <div className="wishlist--icon">
-                  <i class="fas fa-times wishlist__compare__icon"></i>
+                  <i className="fas fa-times wishlist__compare__icon"></i>
                 </div>
               </li>
               <li>
                 Cups vs Plates
                 <div className="wishlist--icon">
-                  <i class="fas fa-times wishlist__compare__icon"></i>
+                  <i className="fas fa-times wishlist__compare__icon"></i>
                 </div>
               </li>
               <div className="wishlist__footer__inner__button">

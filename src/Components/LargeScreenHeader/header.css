@@ -176,6 +176,7 @@ nav {
   align-items: center;
   font-family: "Poppins", sans-serif;
   position: relative;
+  cursor: pointer;
 }
 
 .cart-collection-buttons-icon {

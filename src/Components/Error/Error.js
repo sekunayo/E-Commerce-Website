@@ -3,13 +3,13 @@ import "../Error/error.css";
 import errorSignal from "../../images/signal.png";
 function Error() {
   return (
-    <div class="error">
-      <div class="error__inner__container">
-        <div class="error__inner__container__body">
+    <div className="error">
+      <div className="error__inner__container">
+        <div className="error__inner__container__body">
           <h2>404</h2>
-          <h3 class="error__inner__container__body__error__text">
+          <h3 className="error__inner__container__body__error__text">
             <span>
-              <img src={errorSignal} alt="error__image"></img>
+              <img src={errorSignal} alt="error"></img>
             </span>
             <span>Oops! The Page you requested was not found!</span>
           </h3>

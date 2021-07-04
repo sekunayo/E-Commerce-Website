@@ -41,7 +41,7 @@ function Home() {
   useEffect(() => {
     let slides = setInterval(() => {
       setSlide(slide + 1);
-    }, 1000);
+    }, 6000);
     return () => {
       clearInterval(slides);
     };
@@ -50,20 +50,6 @@ function Home() {
   return (
     <div className="home__section__2">
       <Features />
-      {/* <Slider
-        image={eachSlide}
-        // next={nextSlide}
-        // prev={prevSlide}
-        slideText={eachSlide}
-        title={slideIndex.title}
-        info={slideIndex.info}
-        semiInfo={slideIndex.semiInfo}
-        buttonText={slideIndex.buttonText}
-        sliderContainerClass={"slider-container"}
-        imageContainerClass={"image-container"}
-        display={displayButton}
-      /> */}
-
       <div className="slider-container">
         <div className="inner-slider-container">
           {slideArray.map((element, index) => {

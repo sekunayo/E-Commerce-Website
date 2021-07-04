@@ -19,7 +19,7 @@ function Slider(props) {
       onClick={onMouseMove}
       onMouseLeave={onMouseLeave}
     >
-      <img src={props.image} alt="" srcSet=""></img>
+      <img src={props.image} alt="slider" srcSet=""></img>
       {arrow && <SliderArrows next={props.next} prev={props.prev} />}
       <div className="slider-info-container">
         <p className="slider-title">{props.title}</p>

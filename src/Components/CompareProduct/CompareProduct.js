@@ -16,10 +16,7 @@ function CompareProduct() {
                     <i className="fas fa-times"></i>
                   </div>
                   <div className="compare__row__content__image">
-                    <img
-                      src={element.image}
-                      alt="compare__product__image"
-                    ></img>
+                    <img src={element.image} alt="compare__product"></img>
                   </div>
                   <h4 className="compare__product__name">{element.name}</h4>
                 </div>

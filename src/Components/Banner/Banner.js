@@ -15,11 +15,11 @@ function Banner() {
     <div className="banner-container">
       <div className="inner-banner-container">
         <BannerImage image={banner1} />
-        <BannerBox {...firstBanner} class={"yellow-banner"} />
+        <BannerBox {...firstBanner} className={"yellow-banner"} />
         <BannerImage image={banner2} />
-        <BannerBox {...secondBanner} class={"green-banner"} />
+        <BannerBox {...secondBanner} className={"green-banner"} />
         <BannerImage image={banner3} />
-        <BannerBox {...thirdBanner} class={"blue-banner"} />
+        <BannerBox {...thirdBanner} className={"blue-banner"} />
       </div>
     </div>
   );

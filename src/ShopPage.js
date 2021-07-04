@@ -33,7 +33,7 @@ function ShopPage() {
   useEffect(() => {
     let slides = setInterval(() => {
       setSlide(slide + 1);
-    }, 1000);
+    }, 6000);
     return () => {
       clearInterval(slides);
     };
@@ -80,10 +80,10 @@ function ShopPage() {
             <div className="shop__inner__container__header__columns">
               <div className="shop__header__icon__container">
                 <div className="shop__header__icon">
-                  <i class="fas fa-th"></i>
+                  <i className="fas fa-th"></i>
                 </div>
                 <div className="shop__header__icon">
-                  <i class="fas fa-list"></i>
+                  <i className="fas fa-list"></i>
                 </div>
               </div>
               <div className="shop__header__select__section">

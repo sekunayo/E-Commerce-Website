@@ -1,7 +1,6 @@
 import React from "react";
 import "../Checkout/checkout.css";
 
-
 function Checkout() {
   return (
     <div className="checkout__inner__container__form__container">
@@ -33,13 +32,13 @@ function Checkout() {
               <ul className="checkout--list">
                 <li>
                   <div className="checkout--list--button">
-                    <i class="fas fa-check"></i>
+                    <i className="fas fa-check"></i>
                   </div>
                   Fast and easy check out
                 </li>
                 <li>
                   <div className="checkout--list--button">
-                    <i class="fas fa-check"></i>
+                    <i className="fas fa-check"></i>
                   </div>
                   Easy access to your order history and status
                 </li>

@@ -4,7 +4,7 @@ function Collections(props) {
   return (
     <div className="collections__box">
       <div className="collections-image-box">
-        <img src={props.image} alt="" srcSet=""></img>
+        <img src={props.image} alt="collections" srcSet=""></img>
       </div>
       <div className="collection-text">
         <p className="title">{props.title}</p>

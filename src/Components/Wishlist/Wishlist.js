@@ -14,10 +14,7 @@ function Wishlist() {
               return (
                 <div className="wishlist__column__content">
                   <div className="wishlist__column__content__image">
-                    <img
-                      src={element.image}
-                      alt="wishlist__product__image"
-                    ></img>
+                    <img src={element.image} alt="wishlist__product"></img>
                   </div>
                 </div>
               );
@@ -83,7 +80,7 @@ function Wishlist() {
               return (
                 <div className="wishlist__column__content center">
                   <div className="wishlist--icon">
-                    <i class="far fa-trash-alt"></i>
+                    <i className="far fa-trash-alt"></i>
                   </div>
                 </div>
               );

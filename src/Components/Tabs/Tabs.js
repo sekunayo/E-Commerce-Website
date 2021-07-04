@@ -51,7 +51,7 @@ function Tabs() {
             ante ipsum primis in faucibus orci luctus et ultrices posuere
             cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing
             nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt.
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+            class aptent taciti sociosqu ad litora torquent per conubia nostra,
             per inceptos himenaeos. Integer enim purus, posuere at ultricies eu,
             placerat a felis. Suspendisse aliquet urna pretium eros convallis
             interdum. Quisque in arcu id dui vulputate mollis eget non arcu.
